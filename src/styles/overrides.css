@@ -1,0 +1,9 @@
+.flow{
+    > *+*{
+        margin-top: var(--flow-space, 1rem);
+    }
+
+    h2{
+        --flow-space: 2rem;
+    }
+}

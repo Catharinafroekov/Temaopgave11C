@@ -1,0 +1,74 @@
+---
+import "../styles/global.css";
+---
+<body>
+    <section class="flex">
+    <h1>AskExperts</h1>
+    <nav>
+        <ol class="nav">
+            <li> <a href="/index.astro">Home</a></li>
+            <li> <a href="/casestudy.astro">Case Study</a></li>
+            <li> <a href="/team.astro">Team</a></li>
+            <li> <a href="/about.astro">About</a></li>
+        </ol>
+    </nav>
+    <button>
+        <p>Login</p>
+    </button>
+</section>
+</body>
+
+<style>
+    body{
+        background-color: var(--background);
+        backdrop-filter: blur(10.5px);
+        padding: 38px;
+    }
+
+    h1{
+        color: #FFF;
+font-family: "Cabin";
+font-size: 30px;
+font-weight: 600;
+line-height: 105%; /* 31.5px */
+    }
+
+    p{
+    color: #181818;
+}
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        color: #FFF;
+        text-decoration: none;
+    }
+
+a, p{
+    font-family: "Lato";
+font-size: 17.728px;
+}
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+}
+
+button{
+    padding: 16px;
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+
+</style>

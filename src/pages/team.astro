@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro";
+import { Image } from "astro:assets";
+import EmployeeSection from "../components/EmployeeSection.astro";
+
+const employee = await fetch("https://raw.githubusercontent.com/Catharinafroekov/frontend-design/main/resources/json/employees.json")
+.then(res => res.json());
+---
+<!-- <Image alt="" src={} format="avif"/> -->
+
+<BaseLayout title="Team">
+<EmployeeSection data={employee}/>
+<EmployeeSection data={employee} theme="dark"/>
+</BaseLayout>

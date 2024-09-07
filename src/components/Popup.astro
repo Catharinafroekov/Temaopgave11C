@@ -1,0 +1,84 @@
+---
+import "../styles/global.css";
+---
+
+<body>
+    <section>
+    <h1>Dashboard Login</h1>
+    <div class="flex">
+    <form action="#">
+        <label for="mail">
+        <input type="text" value="Enter Email">
+    </label>
+    </form>
+</div><div>
+    <form action="#">
+        <label for="password">
+        <input type="text" value="Enter Password">
+    </label>
+    </form>
+</div>
+<div>
+    <button>
+        <a href="#">Go to dashboard</a>
+    </button>
+</div>
+</section>
+</body>
+<style>
+
+    body{
+        padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* Centrerer sektionen horisontalt */
+    align-items: center;       /* Centrerer sektionen vertikalt */
+    min-height: 100vh; 
+    }
+section{
+    padding: 40px 60px 60px 60px;
+        background-color: var(--background);
+        border-radius: 20px;
+        display: flex; 
+    flex-direction: column; 
+        align-items: center;  
+    justify-content: center; 
+    gap: 30px;
+    width: fit-content;
+}
+
+    h1{
+        color: #FFF;
+text-align: center;
+font-size: 45px;
+font-weight: 700;
+line-height: 1.16%; /* 52.2px */
+margin-bottom: 30px;
+    }
+
+
+    input{
+        color: #595566;
+font-family: "Cabin";
+font-size: 16px;
+line-height: 1.16%; /* 18.56px */
+padding: 24px 33px;
+    }
+
+    form{
+        background-color: #FFF;
+        border-radius: 54px;
+    }
+
+    button{
+        background-color: var(--primary);
+        border-radius: 42px;
+        padding: 15px 56px;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--h1)
+    }
+
+</style>

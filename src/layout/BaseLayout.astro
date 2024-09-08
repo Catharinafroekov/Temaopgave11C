@@ -1,5 +1,6 @@
 ---
 const {title = ""}= Astro.props;
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -23,3 +24,35 @@ const {title = ""}= Astro.props;
 <style>
 
 </style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	  const popup = document.getElementById("popup");
+	  const loginButton = document.querySelector("button[popovertarget='popup']");
+	  
+	  loginButton.addEventListener("click", function() {
+		popup.style.display = "block";
+	  });
+	  
+	  // Optional: Add functionality to close the popup
+	  popup.addEventListener("click", function(e) {
+		if (e.target === popup) {  // Klik uden for pop-up boksen lukker den
+		  popup.style.display = "none";
+		}
+	  });
+	});
+
+	loginButton.addEventListener("click", function() {
+  popup.style.display = "block";
+  document.body.classList.add("popup-active");
+});
+
+popup.addEventListener("click", function(e) {
+  if (e.target === popup) {
+    popup.style.display = "none";
+    document.body.classList.remove("popup-active");
+  }
+});
+
+  </script>
+  

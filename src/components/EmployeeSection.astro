@@ -2,7 +2,98 @@
 import EmployeeCard from "./EmployeeCard.astro";
 const {data} = Astro.props;
 ---
-
-<section>
+<div class="image-container">
+<img src="/src/assets/images/topfoto.jpg" alt="top billede af mennesker">
+<div class="topdiv">
+<p class="service">Team</p>
+<h1 class="toptekst">The Consultors</h1>
+</div>
+</div>
+<div class="flex">
+  <div>
+<h1 class="overskrift">Meet Our Great Team</h1>
+  <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation.</p>
+</div><div><button>
+    <a href="#">Join our team</a></button> </div> 
+  </div>
+<section class="grid_1-1-1">
     {data.map(employee => <EmployeeCard {...employee}/>)}
 </section>
+
+<style>
+    .image-container {
+    position: relative; /* Add this class */
+}
+  .service{
+    color: var(--h1);
+font-family: "Lato";
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 2.32px;
+text-transform: uppercase;
+padding-left: 15px;
+padding-right: 15px;
+border-radius: 20px;
+background: #FFCC4A;
+width: fit-content;
+  }
+  .toptekst{
+    color: var(--h1);
+font-family: "Cabin";
+font-size: 40px;
+max-width: 500px;
+margin-top: 20px;
+  }
+
+  .topdiv{
+    z-index: 10;
+    border-radius: 29px;
+background: rgba(255, 255, 255, 0.85);
+backdrop-filter: blur(5.5px);
+position: absolute;
+padding: 48px 60px 58px 60px;
+word-wrap: break-word;
+    width: fit-content;
+    height: fit-content;
+    left: 150px;
+    top: 150px;
+  }
+.overskrift{
+    color: var(#181818);
+font-family: "Cabin";
+font-size: 45px;
+font-weight: 700;
+}
+
+.text{
+    color: #595566;
+word-wrap: break-word;
+max-width: 65ch;
+}
+    .flex {
+    grid-area: flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+.grid_1-1-1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    } 
+
+    
+  a{
+    text-decoration: none;
+    color: var(--color-neutrals-100, #FFF);
+text-align: center;
+font-family: "Lato";
+font-size: 18px;
+font-weight: 600;
+  }
+  button{
+    padding: 15px 30px;
+    background-color: var(--h1);
+    border-radius: 42px;
+  }
+
+</style>

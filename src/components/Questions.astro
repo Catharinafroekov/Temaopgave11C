@@ -1,0 +1,100 @@
+<section>
+    <div class="top">
+<button>FAQ</button>
+<h1>Customer Questions</h1>
+</div>
+<div>
+<details name="a">
+    <summary>What will happen when I’ve sent my application?</summary>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt.</div>
+  </details>
+  
+  <details name="a">
+    <summary>Can I get a free trial before I purchase?</summary>
+    <div>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</div>
+  </details>
+  
+  <details name="a">
+    <summary>What should I include in my personal statement?</summary>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt.</div>
+  </details>
+
+  <details name="a">
+    <summary>Will membership plans be charged automatically?</summary>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt.</div>
+  </details>
+
+  <details name="a">
+    <summary>What will happen when I’ve sent my application?</summary>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt.</div>
+  </details>
+
+  <details name="a">
+    <summary>Can I get a free trial before I purchase?</summary>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt.</div>
+  </details>
+</div>
+</section>
+  <style>
+section{
+    border-radius: 30px;
+background-color: #F5F5F5;
+align-items: center;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+align-items: center;
+    gap: 20px;
+}
+
+button{
+    border-radius: 20px;
+background: #4EAF4E;
+text-decoration: uppercase;
+color: #FFF;
+padding-left: 15px;
+padding-right: 15px;
+font-family: "Lato";
+font-size: 16px;
+width: fit-content;
+}
+
+h1{
+    color: #181818;
+font-family: "Cabin";
+font-size: 45px;
+}
+
+summary{
+    color: var(--h1);
+font-family: "Cabin";
+font-size: 20px;
+cursor: pointer;
+}
+
+summary::marker {
+    content: "+";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #333;
+}
+
+details[open] summary::marker {
+    content: "−";
+}
+
+details{
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+  </style>

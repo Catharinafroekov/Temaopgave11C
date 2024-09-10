@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "astro": "^4.15.3",
-    "astro-icon": "^1.1.1"
+    "astro-icon": "^1.1.1",
+    "vite-plugin-svgr": "^4.2.0"
   }
 }

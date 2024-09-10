@@ -3,9 +3,11 @@ import "../styles/global.css";
 ---
 
 <body>
-    <section popover id="popup">
+  <button popovertarget="popup">Login</button>
+    <div popover id="popup">
+      <section>
     <h1>Dashboard Login</h1>
-    <div class="flex">
+    <div>
     <form action="#">
         <label for="mail">
         <input type="text" value="Enter Email">
@@ -35,7 +37,16 @@ import "../styles/global.css";
     align-items: center; 
     min-height: 100vh;  */
     }
-#popup{
+
+    #popup{
+      display: none;
+    }
+
+    div{
+      background-color: var(--background);
+      border-radius: 20px;
+    }
+section{
     padding: 40px 60px 60px 60px;
         background-color: var(--background);
         border-radius: 20px;

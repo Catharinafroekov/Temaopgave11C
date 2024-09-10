@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Popup from "./Popup.astro";
 ---
 <body>
     <section class="flex">
@@ -12,14 +13,15 @@ import "../styles/global.css";
             <li> <a href="/about.astro">About</a></li>
         </ol>
     </nav>
-    <button>
+    <Popup> </Popup>
+    <!-- <button>
         <p>Login</p>
-    </button>
+    </button> -->
 </section>
 </body>
 
 <style>
-    body{
+    section{
         background-color: var(--background);
         backdrop-filter: blur(10.5px);
         padding: 38px;
@@ -64,10 +66,10 @@ font-size: 17.728px;
         gap: 30px;
 }
 
-button{
+/* button{
     padding: 16px;
     background-color: var(--primary);
     border-radius: 20px;
-}
+} */
 
 </style>

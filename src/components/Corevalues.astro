@@ -1,0 +1,130 @@
+---
+import "../styles/global.css";
+---
+
+<body>
+    <section class="grid_1-1-1">
+        <div class="flex">
+            <div>
+    <p class="cap">Growing with our Clients</p>
+        <h1 class="overskrift">Our core values & principles</h1>
+        <p class="breadtext">Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.</p>
+    </div><div>
+        <button><a href="#">Get in touch</a></button>
+    </div>
+    </div>
+    <article class="flexer">
+
+        <div class="styling"><img src="/src/icons/stack.svg" alt="icon"><h1>Creative Ideas</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.</p>
+        <a href="#">Read More ></a></div>
+        <div class="styling"><img src="/src/icons/diagram.svg" alt="icon"><h1>Best Features</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Read More ></a></div>
+        <div class="styling"><img src="/src/icons/world.svg" alt="icon"><h1>Experience</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.</p>
+        <a href="#">Read More ></a></div>
+        <div class="styling"><img src="/src/icons/settings.svg" alt="icon"><h1>Easy Solutions</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#">Read More ></a></div>
+        </article>
+    </section>
+</body>
+<style>
+
+.grid_1-1-1{
+    display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns:
+        [full-start] 1fr [content-start] minmax(0, 1100px)
+        [content-end] 1fr [full-end];
+      gap: 1rlh;
+      * {
+
+
+grid-column: content;
+}
+}
+    .flexer{
+        display: flex;
+        gap: 36px;
+        margin-top: 34px;
+    }
+    section{
+        background-color: var(--h1);
+        padding-top: 50px;
+        padding-bottom: 40px;
+        align-items: center;
+        
+    }
+
+    .styling{
+        padding: 23px 36px;
+        border-radius: 20px;
+background: #F5F5F5;
+width: 100%;
+height: fit-content;
+display: flex;
+flex-direction: column;
+gap: 15px;
+    }
+
+    img{
+        max-width: 38px;
+    }
+    h1{color: #181818;
+font-size: 20px;
+font-weight: 600;
+}
+p{
+    color: #595566;
+}
+
+a{
+    text-decoration: none;
+    color: #181818;
+font-family: "Lato";
+font-size: 18px;
+font-weight: 600;
+}
+
+.cap{
+    color: #181818;
+font-family: "Lato";
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 2.32px;
+text-transform: uppercase;
+border-radius: 20px;
+background: #FFCC4A;
+padding-left: 17px;
+padding-right: 17px;
+width: fit-content;
+}
+
+.overskrift{
+    color: #FFF;
+font-family: "Cabin";
+font-size: 45px;
+font-weight: 700;
+}
+
+.breadtext{
+    color: #FFF;
+font-family: "Lato";
+font-size: 16px;
+max-inline-size: 60ch;
+}
+
+button{
+    padding: 15px 34px;
+background-color: #FFF;
+gap: 10px;
+border-radius: 42px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+</style>

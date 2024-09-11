@@ -1,0 +1,168 @@
+---
+import "../styles/global.css";
+---
+<body>
+    <section>
+<div class="top">
+  <div>
+    <h1>Adam Buschemia Business Consultant</h1>
+    <p>
+      Get help from Alex Moore, a professional business coach with advanced
+      experience on growth and business scaling.
+    </p>
+    <button class="knap" type="button">Book a Meeting</button>
+  </div>
+  <img src="/src/assets/images/sarah.jpg" alt="sarah">
+</div>
+</section>
+<article>
+  <div class="boks1">
+    <div class="flex">
+    <h2>Finance & Restructuring</h2>
+    <p class="p">
+      Get help from Alex Moore, a professional business coach with advanced
+      experience on growth and business scaling.
+    </p>
+    <div><button>Our Services</button></div>
+</div>
+  </div>
+
+  <div class="boks2">
+    <div class="flex">
+    <h2>Finance & Restructuring</h2>
+    <p class="p">
+      Get help from Alex Moore, a professional business coach with advanced
+      experience on growth and business scaling.
+    </p>
+    <div><button>Our Services</button></div>
+</div>
+  </div>
+
+  <div class="boks3">
+    <div class="flex">
+    <h2>Finance & Restructuring</h2>
+    <p class="p">
+      Get help from Alex Moore, a professional business coach with advanced
+      experience on growth and business scaling.
+    </p>
+    <div><button>Our Services</button></div>
+</div>
+  </div>
+</article>
+</body>
+<style>
+
+    section{
+        background-color: var(--h1);
+    }
+  article {
+    margin-bottom: 300px;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-size: cover;
+    margin-left: 180px;
+  }
+
+  .top img{
+    max-height: 600px;
+    min-width: 600px;
+    object-fit: cover; 
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-height: 300px;
+    max-width: 350px;
+    padding: 46px;
+  }
+
+  .boks1 {
+    position: absolute;
+    right: 64%;
+    bottom: -10rem;
+    background-color: rgba(38, 38, 38, 0.90);
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+  .boks2 {
+    position: absolute;
+    right: 38%;
+    bottom: -10rem;
+    background-color: rgba(38, 38, 38, 0.90);
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+  .boks3 {
+    position: absolute;
+    left: 64%;
+    bottom: -10rem;
+    background-color: rgba(38, 38, 38, 0.90);
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+  h2 {
+    color: #FFF;
+font-family: "Cabin";
+font-size: 25px;
+font-weight: 600;
+    padding-bottom: 10px;
+    white-space: nowrap;
+  }
+
+  .p {
+    max-width: 300px;
+    color: #FFF;
+  }
+
+  h1 {
+    color: #FFF;
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 10px;
+  }
+
+  p {
+    color: #FFF;
+    max-width: 50ch;
+  }
+
+  img {
+    flex-basis: 50%;center;
+    background-size: cover; 
+  }
+
+  .knap {
+    border-radius: 42px;
+    color: #353535;
+font-family: "Lato";
+font-size: 18px;
+background-color: #FFF;
+    display: flex;
+    padding: 16px 31px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+button{
+  border-radius: 55px;
+background-color: #151515;
+padding: 16px 31px;
+color: #FFF;
+text-align: center;
+font-family: "Lato";
+font-size: 18px;
+margin-top: 10px;
+}
+</style>

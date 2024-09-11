@@ -2,7 +2,8 @@
 import "../styles/global.css";
 ---
 <body>
-    <section class="grid_1-1-1">
+    <div class="grid_1-1-1">
+    <section >
         <div class="flexer">
         <div>
     <h1>Subscribe Our Newsletter</h1>
@@ -20,23 +21,22 @@ import "../styles/global.css";
 </div>
 </div>
 </section>
+</div>
 </body>
 
 <style>
 
-    /* body{
-        padding: 50px;
-    } */
+
     :root {
   --square-pattern: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="red"><path d="M7.47662 4.02206C6.50635 3.05178 5.53232 2.07774 4.56205 1.10745C4.28482 0.83023 3.80905 0.83023 3.53183 1.10745C2.56155 2.07774 1.59128 3.04803 0.621002 4.02206C0.343781 4.29929 0.343781 4.77506 0.621002 5.05229C1.59128 6.02258 2.5653 6.99661 3.53558 7.9669C3.8128 8.24412 4.28857 8.24412 4.56579 7.9669C5.53607 6.99661 6.51009 6.02258 7.48037 5.05229C7.63022 4.90244 7.69016 4.73011 7.69016 4.56527C7.69016 4.55403 7.69016 4.54654 7.69016 4.5353C7.69016 4.52781 7.69016 4.51657 7.69016 4.50908C7.69016 4.34424 7.63022 4.17191 7.47662 4.02206ZM4.04881 6.41968C3.41944 5.79031 2.79382 5.16468 2.16445 4.5353C2.79382 3.90593 3.41944 3.2803 4.04881 2.65092C4.67818 3.2803 5.3038 3.90593 5.93317 4.5353C5.3038 5.16468 4.67818 5.79031 4.04881 6.41968Z"/></svg>');
     }
     section{
-        padding: 87px;
+        padding: 55px;
         background-color: var(--background);
         border-radius: 20px;
         position: relative;
         overflow: hidden;
-  &::before {
+  ::before {
     --square-count: 10;
     --square-size: 2.5rem;
     
@@ -46,7 +46,7 @@ import "../styles/global.css";
     z-index: 1;
     content: '';
     position: absolute;
-    inset: -200px -190px auto auto;
+    inset: -300px -190px auto auto;
     rotate: 45deg;
     /*inline-size: calc(var(--square-count) * 1.34rem - .67rem);*/
     inline-size: calc( round( var(--_square-sum), var(--_square-size) ) - var(--_square-half) );
@@ -61,8 +61,8 @@ import "../styles/global.css";
   &::after {
     content: '';
     position: absolute;
-    right: -3rem;
-    bottom: -8rem;
+    right: -4rem;
+    bottom: -10rem;
     background: #4EAF4E;
     width: 200px;
     height: 200px;
@@ -71,24 +71,21 @@ import "../styles/global.css";
     rotate: 45deg;
   }
     }
-/* .grid_1-1-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 141px;
-} */
 
 .flexer{
     display: flex;
     justify-content: space-between;
-    gap: 141px;
+    gap: 14px;
+    white-space: nowrap;
 }
 .grid_1-1-1{
     display: grid;
-      grid-template-rows: auto 1fr auto;
+     /*  grid-template-rows: auto 1fr auto; */
       grid-template-columns:
         [full-start] 1fr [content-start] minmax(0, 1100px)
         [content-end] 1fr [full-end];
-      gap: 1rlh;
+        margin-bottom: 100px;
+        margin-top: 100px;
       * {
 
 
@@ -102,7 +99,7 @@ color: #FFF;
 font-size: 35px;
 font-weight: 700;
 margin-bottom: 12px;
-
+white-space: nowrap;
 }
 
 p{
@@ -121,6 +118,7 @@ form{
     background-color: #FFF;
     border-radius: 54px;
     align-items: center;
+    height: fit-content;
 }
 
 a{
@@ -133,11 +131,11 @@ button{
     padding: 15px 45px;
     border-radius: 42px;
     z-index: 2;
+    height: fit-content;
 }
 
 .flex{
     display: flex;
-    flex-direction: row;
     gap: 10px;
 }
 

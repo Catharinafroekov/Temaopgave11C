@@ -7,13 +7,21 @@ import Corevalues from "../components/Corevalues.astro";
 import Questions from "../components/Questions.astro";
 import AboutHeader from "../components/AboutHeader.astro";
 import Vision from "../components/Vision.astro";
----
+import TeamSection from "../components/TeamSection.astro";
+import { Image } from "astro:assets";
 
+const employee = await fetch("https://raw.githubusercontent.com/Catharinafroekov/frontend-design/main/resources/json/employees.json")
+  .then(res => res.json());
+const url = new URL(Astro.url);
+const limit = Number(url.searchParams.get('limit')) || 3;
+const limitedEmployees = employee.slice(0, limit);
+---
 <BaseLayout title="About">
 <Header/>
 <AboutHeader/>
 <Vision/>
 <Corevalues/>
+<TeamSection data={limitedEmployees}/>
 <Questions/>
 <Newsletter/>
 <Footer/>

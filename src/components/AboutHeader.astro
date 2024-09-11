@@ -1,0 +1,52 @@
+---
+import "../styles/global.css"
+---
+<body>
+<div class="image-container">
+    <img src="/src/assets/images/topfoto.jpg" alt="top billede af mennesker">
+    <div class="topdiv">
+    <p class="knap">Services</p>
+    <h1 class="toptekst">Creative Services For Boost Your Business Growth</h1>
+    </div>
+</body>
+
+    <style>
+        .image-container {
+        position: relative; /* Add this class */
+    }
+      .knap{
+        color: var(--h1);
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    background: #FFCC4A;
+    width: fit-content;
+      }
+      .toptekst{
+        color: var(--h1);
+    font-family: "Cabin";
+    font-size: 40px;
+    max-width: 500px;
+    margin-top: 20px;
+      }
+    
+      .topdiv{
+        z-index: 10;
+        border-radius: 29px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5.5px);
+    position: absolute;
+    padding: 48px 60px 58px 60px;
+    word-wrap: break-word;
+        width: fit-content;
+        height: fit-content;
+        left: 150px;
+        top: 150px;
+      }
+
+      </style>

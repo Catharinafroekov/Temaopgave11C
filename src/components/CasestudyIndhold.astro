@@ -1,0 +1,205 @@
+---
+import "../styles/global.css"
+---
+<body>
+<div class="image-container">
+    <img src="/src/assets/images/topfoto3.jpg" alt="top billede af mennesker">
+    <div class="topdiv">
+    <p class="knap">Case Studies single</p>
+    <h1 class="toptekst">Taxes & Efficiency</h1>
+    </div>
+<div class="align">
+  <div>
+<img class="border" src="/src/assets/images/laptop.jpg" alt="laptop">
+</div>
+<div class="flex">
+  <dl>
+    <div>
+    <dt>Case Name</dt>
+    <dd>Taxes & Efficiency</dd>
+  </div><div>
+    <dt>Category</dt>
+    <dd>Business</dd>
+  </div><div>
+    <dt>Date</dt>
+    <dd>27th September 2022</dd>
+  </div>
+  </dl>
+  <button>
+    <a href="#">Live Preview</a>
+  </button>
+</div>
+</div>
+<section class="grid_1-1-1">
+<h1>Project Overview</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+<ul>
+  <li>It brings the right people together with all the right information and tools to get work done</li>
+  <li>We provide operational efficiency, data security, and flexible scale</li>
+  <li>Your best work, together in one package that works seamlessly from your computer</li>
+  <li>Delivers the tools you need to save time Improve field performance always</li>
+</ul>
+<h2>Storyboard</h2>
+<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service. Objectively innovate empowered manufactured products whereas parallel platforms. Holistically predominate extensible testing procedures for reliable supply chains.</p>
+<p>Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products completely pursue scalable customer service.</p>
+<img src="/src/assets/images/vejledning.jpg" alt="vejledning">
+<h3>Project result</h3>
+<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+    </section>
+</body>
+
+    <style>
+.grid_1-1-1{
+    display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns:
+        [full-start] 1fr [content-start] minmax(0, 800px)
+        [content-end] 1fr [full-end];
+      gap: 1rlh;
+      * {
+
+
+grid-column: content;
+}
+}
+.border{
+  border-radius: 20px;
+  margin-top: 100px;
+  max-width: fit-content;
+  position: relative;
+  z-index: 1;
+}
+
+.align{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+section img{
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+  gap: 190px;
+  justify-content: center;
+  border-radius: 30px;
+background-color: var(--h1);
+padding: 53px 60px;
+z-index: 10;
+position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+button{
+  border-radius: 42px;
+background: #FFCC4A;
+padding: 16px 33px;
+}
+a{
+  color: var(--h1);
+text-align: center;
+font-family: "Lato";
+font-size: 18px;
+font-weight: 600;
+text-decoration: none;
+}
+
+dl{
+  display: flex;
+  gap: 100px;
+}
+
+dt{
+  color: #FFF;
+font-family: "Cabin";
+font-size: 20px;
+font-weight: 600;
+}
+
+dd{
+  color: #FFF;
+font-family: "Cabin";
+font-size: 16px;
+font-weight: 400;
+}
+
+h1{
+  color: var(--h1);
+font-size: 40px;
+font-weight: 700;
+}
+
+p{
+  color: color: #595566;;
+}
+
+li{
+  text-decoration: none;
+  list-style: circle;
+  color: #595566;
+font-family: "Cabin";
+font-size: 16px;
+font-weight: 400;
+}
+
+h2, h3{
+  color: #1C1C1C;
+font-family: "Cabin";
+font-size: 30px;
+font-weight: 700;
+}
+
+        .image-container {
+        position: relative; /* Add this class */
+    }
+      .knap{
+        color: var(--h1);
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    background: #FFCC4A;
+    width: fit-content;
+      }
+      .toptekst{
+        color: var(--h1);
+    font-family: "Cabin";
+    font-size: 40px;
+    max-width: 500px;
+    margin-top: 20px;
+      }
+    
+      .topdiv{
+        z-index: 10;
+        border-radius: 29px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5.5px);
+    position: absolute;
+    padding: 48px 60px 58px 60px;
+    word-wrap: break-word;
+        width: fit-content;
+        height: fit-content;
+        left: 150px;
+        top: 150px;
+      }
+
+      </style>

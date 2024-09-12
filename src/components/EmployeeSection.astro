@@ -22,7 +22,7 @@ const {data} = Astro.props;
 
 <style>
     .image-container {
-    position: relative; /* Add this class */
+    position: relative;
 }
   .knap{
     color: var(--h1);
@@ -96,11 +96,9 @@ font-weight: 600;
     border-radius: 42px;
   }
 
-  
-  /* Media Queries */
   @media (max-width: 1024px) {
         .grid_1-1-1 {
-            grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 

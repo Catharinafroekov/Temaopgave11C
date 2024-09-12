@@ -48,14 +48,12 @@ import "../styles/global.css";
     position: absolute;
     inset: -300px -190px auto auto;
     rotate: 45deg;
-    /*inline-size: calc(var(--square-count) * 1.34rem - .67rem);*/
     inline-size: calc( round( var(--_square-sum), var(--_square-size) ) - var(--_square-half) );
     aspect-ratio: 1;
     background: linear-gradient(135deg, #BE965D, #976F40, #C99B61, #F0BE7B , #FFCB85, #EEBC79, #C0935B, #976F40) 0 0 / 100% 100%;
     mask:
       var(--square-pattern) 0 0 / var(--_square-size) var(--_square-size),
       var(--square-pattern) var(--_square-half) var(--_square-half) / var(--_square-size) var(--_square-size);
-    /*clip-path: polygon(-3% 0%, 100% 0%, 100% 103%);*/
   }
  
   &::after {
@@ -80,7 +78,6 @@ import "../styles/global.css";
 }
 .grid_1-1-1{
     display: grid;
-     /*  grid-template-rows: auto 1fr auto; */
       grid-template-columns:
         [full-start] 1fr [content-start] minmax(0, 1100px)
         [content-end] 1fr [full-end];

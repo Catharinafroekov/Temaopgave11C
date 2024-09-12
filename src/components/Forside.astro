@@ -185,4 +185,59 @@ font-family: "Lato";
 font-size: 18px;
 margin-top: 10px;
 }
+@media (max-width: 768px) {
+  .top {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .top img {
+      display: none;
+    }
+
+    .boks1, .boks2, .boks3{
+      position: static;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    article{
+      margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: fit-content;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+    }
+
+    .pattern, .pattern2{
+      display: none;
+    }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+
+  p {
+    font-size: 0.9em;
+    max-width: 100%;
+  }
+
+  .box1, .box2, .box3 {
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+}
+
 </style>

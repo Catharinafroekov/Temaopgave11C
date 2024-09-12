@@ -181,4 +181,36 @@ img{
         margin-bottom: 10%;
     }
 }
+
+@media (max-width: 768px) {
+    .grid_1-1 {
+      grid-template-columns: 1fr;
+      margin: 1rem;
+    }
+
+    .kontakt {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      padding: 1rem 0; /* Adjust padding for vertical stack */
+    }
+
+    .kontakt img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .kontakt h6 {
+      font-size: 16px;
+    }
+
+    .hp2_galleri {
+      margin-top: 1rem; /* Margin to ensure separation */
+      grid-template-columns: 1fr;
+      grid-template-rows: auto; /* Allow rows to adjust automatically */
+    }
+    figure{
+        display: none;
+    }
+  }
 </style>

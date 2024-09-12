@@ -5,11 +5,11 @@ import { Image } from "astro:assets";
 const { img, name, title, description } = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/images/*.{jpeg,jpg,png,gif}"
+  "/public/assets/images/*.{jpeg,jpg,png,gif}"
 );
 if (!images[img])
   throw new Error(
-    `"${img}" does not exist in glob: "src/assets/images/*.{jpeg,jpg,png,gif}"`
+    `"${img}" does not exist in glob: "public/assets/images/*.{jpeg,jpg,png,gif}"`
   );
 ---
 <section>
@@ -22,7 +22,7 @@ if (!images[img])
             <p>{description}</p>
           </div>
 <div class="SoMe">
-  <img src="/src/icons/ig.svg" alt="insta"><img src="/src/icons/fb.svg" alt="facebook"><img src="/src/icons/x.svg" alt="twitter">
+  <img src="/public/icons/ig.svg" alt="insta"><img src="/public/icons/fb.svg" alt="facebook"><img src="/public/icons/x.svg" alt="twitter">
 </div>
         </header>
     </article>

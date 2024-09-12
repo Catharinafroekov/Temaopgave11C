@@ -14,9 +14,6 @@ import Popup from "./Popup.astro";
         </ol>
     </nav>
     <Popup> </Popup>
-    <!-- <button>
-        <p>Login</p>
-    </button> -->
 </section>
 </body>
 
@@ -66,10 +63,28 @@ font-size: 17.728px;
         gap: 30px;
 }
 
-/* button{
-    padding: 16px;
-    background-color: var(--primary);
-    border-radius: 20px;
-} */
+
+ @media (max-width: 768px) {
+        section {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav {
+            gap: 10px;
+        }
+
+        .popup-container {
+            margin-top: 10px;
+        }
+    }
 
 </style>

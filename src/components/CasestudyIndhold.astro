@@ -109,6 +109,7 @@ button{
   border-radius: 42px;
 background: #FFCC4A;
 padding: 16px 33px;
+width: fit-content;
 }
 a{
   color: var(--h1);
@@ -165,7 +166,7 @@ font-weight: 700;
 }
 
         .image-container {
-        position: relative; /* Add this class */
+        position: relative;
     }
       .knap{
         color: var(--h1);
@@ -201,5 +202,41 @@ font-weight: 700;
         left: 150px;
         top: 150px;
       }
+
+      
+      @media (max-width: 768px) {
+        .knap {
+            font-size: 14px;
+            padding: 8px 12px;
+        }
+
+        .toptekst {
+            font-size: 24px;
+        }
+
+        .topdiv {
+            position: static;
+            padding: 15px;
+            margin: 20px 10px;
+            box-sizing: border-box;
+        }
+        .flex {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        width: auto; 
+        position: static;
+    }
+
+    .border{
+      display: none;
+    }
+    dl {
+      display: block;
+        margin-top: 10px; /* Adjust margin for mobile */
+        text-align: center; /* Center text */
+    }
+   
+    }
 
       </style>

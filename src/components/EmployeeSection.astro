@@ -96,4 +96,39 @@ font-weight: 600;
     border-radius: 42px;
   }
 
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+        .grid_1-1-1 {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        }
+    }
+
+    @media (max-width: 768px) {
+        .knap {
+            font-size: 14px;
+            padding: 8px 12px;
+        }
+
+        .toptekst {
+            font-size: 24px;
+        }
+
+        .topdiv {
+            position: static;
+            padding: 15px;
+            margin: 20px 10px;
+            box-sizing: border-box;
+        }
+
+        .grid_1-1-1 {
+            grid-template-columns: 1fr;
+        }
+
+        .flex {
+            flex-direction: column;
+            margin: 20px;
+        }
+    }
+
 </style>

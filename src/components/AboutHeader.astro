@@ -12,7 +12,7 @@ import "../styles/global.css"
 
     <style>
         .image-container {
-        position: relative; /* Add this class */
+        position: relative; 
     }
       .knap{
         color: var(--h1);
@@ -48,5 +48,23 @@ import "../styles/global.css"
         left: 150px;
         top: 150px;
       }
+
+      @media (max-width: 768px) {
+        .knap {
+            font-size: 14px; /* Smaller font size for mobile */
+            padding: 8px 12px; /* Smaller padding for mobile */
+        }
+
+        .toptekst {
+            font-size: 24px; /* Smaller font size for mobile */
+        }
+
+        .topdiv {
+            position: static; /* Remove absolute positioning */
+            padding: 15px; /* Adjusted padding for mobile */
+            margin: 20px 10px; /* Margin to give space around */
+            box-sizing: border-box; /* Ensure padding is included in margin */
+        }
+    }
 
       </style>

@@ -2,6 +2,8 @@
 import "../styles/global.css";
 ---
 <body>
+  <img class="pattern" src="/src/icons/pattern.svg" alt="pattern">
+  <img class="pattern2" src="/src/icons/pattern.svg" alt="pattern">
     <section>
 <div class="top">
   <div>
@@ -15,6 +17,7 @@ import "../styles/global.css";
   <img src="/src/assets/images/sarah.jpg" alt="sarah">
 </div>
 </section>
+</figure>
 <article>
   <div class="boks1">
     <div class="flex">
@@ -52,6 +55,23 @@ import "../styles/global.css";
 </body>
 <style>
 
+.pattern{
+  max-width: 100px;
+  max-height: 100px;
+  z-index: 10;
+  position: absolute;
+  top: 135px;
+  right: 600px;
+}
+.pattern2{
+  max-width: 200px;
+  max-height: 200px;
+  z-index: 10;
+  position: absolute;
+  top: 350px;
+  left: -100px;
+  overflow: hidden;
+}
     section{
         background-color: var(--h1);
     }

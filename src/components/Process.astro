@@ -1,111 +1,184 @@
 ---
-import "../styles/global.css"
----
 
-<section class="grid_2-1-1">
-    <div class="flex">
-<div class="flex">
-    <p class="knap">Proccess</p>
-    <h1>Contact Us. It’s Easy.</h1>
-    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative.</p>
-</div>
-<div>
-    <dl class="grid_1-1">
-        <div><img src="/src/icons/telefon.svg" alt="tlf"></div><div class="flex2"><dd>Call Today</dd><dt>+1 800 100 900</dt></div>
-        <div><img src="/src/icons/time.svg" alt="tid"></div><div class="flex2"><dd>Monday To Friday</dd><dt>9AM - 5PM</dt></div>
-        <div><img src="/src/icons/location.svg" alt="lokation"></div><div class="flex2"><dd>USA Office</dd><dt>195 Devonshire St Boston, MA 02110</dt></div>
-    </dl>
-</div>
-</div>
-<div class="grid_1-1fr">
-    <img class="img1" src="/src/assets/images/curly.jpg" alt="kvinde med krøller">
-    <img class="img3" src="/src/assets/images/thinking.jpg" alt="tanker">
-    <img class="img2" src="/src/assets/images/jamesbond.jpg" alt="hænder">
-</div>
+---
+<section class="grid_1-1">
+
+    <div>
+        <div class="gulknap">Process</div>
+        <h1>Contact Us. It's Easy.</h1>
+        <p>
+            Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative.
+        </p>
+        <div class="kontakt">
+            <img src="/src/icons/telefon.svg" alt="telefon">
+            <div>
+            <p>Call Today</p>
+            <h6>+1 800 100 900</h6>
+        </div>
+        </div>
+        <div class="kontakt">
+            <img src="/src/icons/time.svg" alt="ur">
+            <div>
+            <p>Monday To Friday</p>
+            <h6>9AM - 5PM</h6>
+            </div>
+        </div>
+        <div class="kontakt">
+            <img src="/src/icons/location.svg" alt="lokations pin">
+            <div>
+            <p>USA Office</p>
+            <h6>195 Devonshire St Boston, MA 02110
+            </h6>
+            </div>
+        </div>
+        
+      </div>
+    <figure>
+        <div class="hp2_galleri">
+        <img class="hp2_pic"src='/src/assets/images/curly.jpg' alt=''>
+        <img src='/src/assets/images/thinking.jpg' alt=''>
+        <img src='/src/assets/images/vejledning.jpg' alt=''>
+        </div>
+      </figure>
+    
+
 </section>
 
 <style>
-    .grid_2-1-1{
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 69px;
-        margin: 50px;
-        align-items: center;
-        justify-content: center;
-    }
 
-dl img{
-    max-width: 52px;
-}
-
-.grid_1-1fr{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    gap:15px ;
-    height: 500px;
-}
-
-.img1{
-    display: grid;
-    grid-row: 1/span 2;
-    grid-column: 1/2;
-    align-self: end;
-    height: 515px;
-}
-.img2, .img3{
-    display: grid;
-    grid-column: 2 / -1;
-    align-self: stretch; 
-    height:250px;
-    align-self: end;
-}
-
-.img2{
-    grid-row: 2 / 3;
-}
-
-.img3{
-    grid-row: 1 / 2;
-}
-
-.img1, .img2, .img3{
-    border-radius: 20px;
-    width: 300px;
-}
-
-.grid_1-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 56px;
-}
-
-.flex{
-    display: flex;
-    flex-direction: column;
-    gap: 19px;
-}
-
-.flex2{
-    display: flex;
-    flex-direction: column;
-}
-.knap{
-border-radius: 20px;
-background-color: #FFCC4A;
-padding: 0px 11px;
-color: var(--h1);
-text-align: center;
-font-family: "Lato";
-font-size: 16px;
-font-weight: 400;
+    .gulknap{
+        padding: 1px 15px;
+        border-radius: 20px;
+background: #FFCC4A;
 letter-spacing: 2.32px;
 text-transform: uppercase;
 width: fit-content;
+    }
+    .grid_1-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:5%;
+        margin: 7%;
+    
 }
-h1{
-    color: var(--h1);
-font-size: 45px;
-font-weight: 700;
+.kontakt{
+    img{
+width: 45px;
+height: 45px;
+    }
+    display: flex;
+    gap: 3%;
+    padding: 2%;
+
+    h6{
+        font-size: 18px;
+    }
+
+}
+
+ul {
+  display: grid;
+  gap: 1rem;
+}
+
+li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #595566;
+}
+
+li:before {
+  content: '';
+  width: 1.6rem;
+  aspect-ratio: 1;
+  background: var(--checkmark-icon) 50% 50% / contain no-repeat;
+}
+
+.hp2_galleri{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 3%;
+
+
+.hp2_pic{
+    grid-row: 1/-1;
+}
+}
+
+figure {
+img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+  position: relative;
+
+  
+  &::before {
+    --square-count: 10;
+    --square-size: 1.34rem;
+    
+    --_square-size: var(--square-size, 1rem);
+    --_square-half: calc(var(--square-size) / 2);
+    --_square-sum: calc(var(--square-count) * var(--square-size));
+    z-index: -1;
+    content: '';
+    position: absolute;
+    inset: -40px -50px auto auto;
+    /*inline-size: calc(var(--square-count) * 1.34rem - .67rem);*/
+    inline-size: calc( round( var(--_square-sum), var(--_square-size) ) - var(--_square-half) );
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, #BE965D, #976F40, #C99B61, #F0BE7B , #FFCB85, #EEBC79, #C0935B, #976F40) 0 0 / 100% 100%;
+    mask:
+      var(--square-pattern) 0 0 / var(--_square-size) var(--_square-size),
+      var(--square-pattern) var(--_square-half) var(--_square-half) / var(--_square-size) var(--_square-size);
+    /*clip-path: polygon(-3% 0%, 100% 0%, 100% 103%);*/
+    
+  }
+ 
+  &::after {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    bottom: -1rem;
+    background: var(--primary02);
+    width: 180px;
+    height: 100px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  
+
+    }
+    @media (max-width: 768px) {
+    .grid_hp2 {
+        margin: 1rem;
+        gap: 2%;
+        grid-template-columns: 1fr;
+    }
+
+    .contact_details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .contact_details img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact_details h6 {
+        font-size: 16px;
+    }
+
+    .hp2_galleri {
+        margin-bottom: 10%;
+    }
 }
 </style>

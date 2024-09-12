@@ -13,7 +13,7 @@ import "../styles/global.css";
         <button><a href="#">Get in touch</a></button>
     </div>
     </div>
-    <article class="grid_1-1-1-1">
+    <article class="flexer">
 
         <div class="styling"><img src="/src/icons/stack.svg" alt="icon"><h1>Creative Ideas</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam.</p>
@@ -31,13 +31,24 @@ import "../styles/global.css";
     </section>
 </body>
 <style>
-.grid_1-1-1-1{
+/* .grid_1-1-1{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 36px;
-    margin-top: 34px;
-}
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns:
+        [full-start] 1fr [content-start] minmax(0, 1100px)
+        [content-end] 1fr [full-end];
+      gap: 1rlh;
+      * {
 
+
+grid-column: content;
+}
+} */
+    .flexer{
+        display: flex;
+        gap: 36px;
+        margin-top: 34px;
+    }
     section{
         background-color: var(--h1);
         padding-top: 50px;
@@ -117,15 +128,23 @@ border-radius: 42px;
 }
 
 @media (max-width: 768px) {
-  .grid_1-1-1-1 {
+ /*  .grid_1-1-1 {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
+  } */
 
   .flex {
     flex-direction: column;
     align-items: center;
   }
+
+  article.flexer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px;
+  }
+
   .cap {
     font-size: 14px;
     padding: 0 10px;
